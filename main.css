@@ -1,0 +1,374 @@
+/*? all */
+* {
+  font-style: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+  color: #aaa;
+}
+
+h1 {
+  padding-top: 400px;
+  font-family: sans-serif;
+  font-weight: bold;
+  /*? Сглаживание шрифта */
+  background: #eee;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  font-weight: bold;
+  /*? Сглаживание шрифта */
+  background: #aaa;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  color: #aaa;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.nice-font {
+  /*? Сглаживание шрифта */
+  background: #eee;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a.nice-font {
+  /*? Сглаживание шрифта */
+  background: #aaa;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p, label, i {
+  /*? Сглаживание шрифта */
+  background: #eee;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+textarea, input {
+  margin-top: 10px;
+  color: #aaa;
+  background-color: #333;
+  outline: none;
+  /*? Сглаживание шрифта */
+  background: #aaa !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+input:focus, textarea:focus {
+  /*? Сглаживание шрифта */
+  color: #666;
+  background-clip: border-box !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  outline: 4px solid #444444aa !important;
+  transition: all 0.3s ease-in-out;  
+ }
+
+a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*! all */
+
+/*todo Header */
+/** Navigation */
+header nav {
+  width: 100%;
+  height: 10%;
+  padding: 0 !important;
+}
+
+header nav .navbar-nav li {
+  font-size: 16px;
+}
+
+header .container-fluid {
+  position: fixed;
+  top: 0;
+  transition: all .9s;
+}
+
+header .nav-scrolled {
+  background-color: #333333aa !important;
+}
+
+/** NavItem  */
+header .active {
+  color: #eee;
+  /*? Сглаживание шрифта */
+  background: #eee !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: #eee !important;
+}
+/*! NavItem  */
+/*! Navigation */
+
+/** Title */
+header .background-video-overly {
+  background-color: #0d1645aa;
+}
+
+/** Background */
+header .z--1 {
+  z-index: -999999;
+  object-fit: cover;
+}
+/*! Background */
+/*! Title */
+/*! Header */
+
+/*todo Content */
+content #main-body {
+  margin-top: 20px;
+}
+
+/** Promo */
+content .single-promo-2 span {
+  font-size: 25px;
+  background-image: url('img/promo-icon-bg.svg');
+  background-size: 120px;
+  height: 80px;
+  width: 80px;
+  background-repeat: no-repeat;
+  background-position: 40% 25%;
+  color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+content .circle-icon {
+  height: 133px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+content .single-promo-2 {
+  box-shadow: 0 0 3px 0 rgba(131, 145, 161, 0.6) !important;
+}
+
+content .single-promo-hover {
+  transition: all .2s ease-out;
+  will-change: transform;
+  border-radius: 30px;
+}
+
+content .single-promo-hover:hover {
+  box-shadow: 0 0 1rem rgba(131, 145, 161, 0.8) !important;
+}
+
+.promo-section .container {
+  overflow-y: scroll;
+  max-height: 90vh;
+}
+
+.list-group-item {
+  background-color: #0000;
+  border-color: #333;
+}
+
+
+.list-group-item:hover {
+  background-color: #333;
+}
+
+/*! Promo */
+
+/** About */
+.about-section {
+  background-image: url(img/fierwork.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  min-height: 700px;
+}
+
+.lead {
+  width: 450px;
+}
+
+@media screen and (max-width: 1400px) {
+  .list-about {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .lead {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-section {
+    min-height: 650px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-section {
+    min-height: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    min-height: 520px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-section {
+    min-height: auto;
+    background: none;
+  }
+}
+
+content .about-section img {
+  width: 500px;
+}
+
+content .color-primary {
+  color: #0073ec !important;
+}
+
+content .action-btns a:first-child {
+  margin-right: 15px;
+}
+
+content .primary-solid-btn {
+  border: 1px solid #0073ec;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .15);
+  background: #0073ec;
+  background-color: rgb(0, 115, 236);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: none;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  color: #fff;
+}
+
+content .primary-solid-btn:hover {
+  background: transparent;
+  color: #0073ec;
+  border: 2px solid #0073ec;
+}
+
+content .animated-btn:hover {
+  transform: translate(0, -3px);
+  -webkit-transform: translate(0, -3px);
+}
+
+/*! About */
+/*! Content */
+
+/*todo Footer */
+footer * {
+  color: #ddd;
+}
+
+footer a {
+  display: block;
+}
+
+footer .list-inline-item i {
+  font-size: 30px;
+}
+
+/*! Footer */
+
+/*? Custom */
+/** Прописывайте кастомные стили здесь или в другом файле
+** Prepare custom styles here or in another file */
+
+/** Preloader */
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
+  z-index: 1001;
+  background-color: #222;
+}
+
+.loaded_hiding .preloader {
+  transition: all .9s ease-out;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+/*! Preloader */
+
+/** Logo */
+.brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.brand {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 36px;
+  /*? Сглаживание шрифта */
+  background: #eee !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: #eee !important;
+}
+/*! Logo */
+
+/*! Custom */
