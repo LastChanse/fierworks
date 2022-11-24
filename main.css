@@ -40,7 +40,6 @@ ul {
 
 a {
   color: #aaa;
-  opacity: 0.8;
   text-decoration: none;
 }
 
@@ -97,7 +96,12 @@ input:focus, textarea:focus {
 
 a:hover {
   color: #fff;
-  opacity: 1;
+  background-color: #fff;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+
 }
 
 img {
