@@ -596,6 +596,14 @@
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
       }, 500);
+
+      function foo() {
+        $("#buttonClick").click();
+      }
+
+      setTimeout(foo, 1000);
+      setTimeout(foo, 2000);
+      setTimeout(foo, 3000);
     }
 
     // From https://bootsnipp.com/snippets/1dPDV
@@ -623,12 +631,6 @@
         }
       });
     });
-
-    function foo() {
-      $("#buttonClick").click();
-    }
-
-    setTimeout(foo, 1000);
   </script>
 </body>
 
